@@ -133,3 +133,16 @@ h1 {
     font-family: 'SuperMario', sans-serif;
     font-size: 22px;
 }
+
+.registrar1 {
+    background-color: #fa0727;
+    color:rgb(246, 246, 252);
+    border: 1px solid #d00f0c; /* Agrega el grosor y el tipo de borde necesario (en este caso, sólido) */
+    border-radius: 10px; /* Ajusta el valor de border-radius según la curvatura deseada */
+    padding: 6px; /* Ajusta el relleno según sea necesario */
+    transition: transform 0.3s ease;
+}
+
+.registrar1:hover {
+    transform: scale(1.1); /* Aplica una escala del 110% al pasar el cursor sobre el elemento */
+}
