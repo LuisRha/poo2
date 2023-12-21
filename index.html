@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Juego de Memoria</title>
+    <link rel="stylesheet" href="wsdiseño.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="background-image"></div>
+        <div class="welcome-content">
+            <h1>Juego de Memoria</h1>
+            <p class="project-info">Proyecto POO2</p>
+            
+            <button class="enter-name-btn" onclick="openNameInput()">Ingresa tu nombre</button>
+
+            <div class="name-input-box" id="nameInputBox">
+                <input type="text" id="nameInput" placeholder="Ingresa tu nombre">
+                <button id="guardarBtn" onclick="guardarNombre()">Guardar</button>
+            </div>
+            
+            <button class="go-to-game-btn guardar-btn" onclick="redirigirAIndex()" id="irAhoraBtn" disabled>Ir ahora</button>
+            
+            <div class="members">
+                <p class="members-label">Integrantes:</p>
+                <ul>
+                    <li>Carlos Anazco</li>
+                    <li>Jhino Cango</li>
+                    <li>David Crespo</li>
+                    <li>Gerard Guerrero</li>
+                    <li>Luis Huatatoca</li>
+                    <li>Maycol Naranjo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="wslogica.js"></script>
+</body>
+</html>

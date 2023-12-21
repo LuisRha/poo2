@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'SuperMario';
+    src: url('zFontsupermario.ttf') format('truetype');
+}
+body {  
+    background-image: url(Imagenes3/ab18.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+    font-family: 'SuperMario', sans-serif;
+    font-weight: none;
+    color: rgb(2, 2, 2);    
+    overflow: hidden;
+
+}
+main {
+    width: 950px;
+    margin: 20px auto;
+    margin-left: 500px;
+    display: flex;
+    justify-content: center; 
+}
+.section1 {
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 900px;
+    height: auto;
+    padding: 0 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: -70px;
+    margin-right: 180px;
+    border-radius: 1px;
+    
+}
+h1 {
+    text-align: center;
+    font-weight: normal; /* Ajusta a 'normal' para quitar la negrita */
+}
+button {
+    height: 90px;
+    width: 90px;
+    margin: 4px;
+    margin-top: 1px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+.section2 {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 350px;
+    height: 250px;
+    padding: 0 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: -170px;
+    margin-right: 190px;
+  
+}
+.estadisticas {
+    border: 2px solid rgb(9, 9, 9);
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 2px;
+    text-align: left;
+    line-height: 40px;
+    color: #040404;
+    font-weight: normal;
+ /* Ajusta a 'normal' para quitar la negrita */
+}
+footer {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'SuperMario', sans-serif;    
+    color: #f9faf8;
+    margin-left: -80px;
+    margin-top: 20px;
+    font-weight: normal; 
+  }
+
+a {
+    text-decoration: none;
+}
+img {
+    width: 75%;
+}
+.imagen-movible {
+    position: absolute;
+    top: 350px; /* Ajusta según tus necesidades */
+    left: 300px; /* Ajusta según tus necesidades */
+    width: 200px; /* Ajusta según tus necesidades */
+    height: auto;
+    z-index: 999; /* Asegura que esté sobre otros elementos si es necesario */
+}
+.imagen-movible-2 {
+    position: absolute;
+    top: 50px; /* Ajusta según tus necesidades */
+    left: 90px; /* Ajusta según tus necesidades */
+    width: 250px; /* Ajusta según tus necesidades */
+    height: auto;
+    z-index: 999; /* Asegura que esté sobre otros elementos si es necesario */
+}
+
