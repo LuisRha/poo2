@@ -61,6 +61,36 @@ function salir() {
 document.getElementById("btnSalir").addEventListener("click", salir);
 //   hasta  aqui 
 
+
+function registrarUsuario() {
+  var nombre = document.getElementById("nameInput").value;
+  var contrasena = document.getElementById("passwordInput").value;
+
+  // Validar que los campos no estén vacíos
+  if (nombre === '' || contrasena === '') {
+      alert("Por favor, completa todos los campos");
+      return;
+  }
+
+  // Enviar datos al archivo PHP usando XMLHttpRequest
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "registrar.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          alert(xhr.responseText); // Muestra la respuesta del servidor
+      }
+  };
+
+  // Construir la cadena de datos a enviar
+  var datos = "nombre=" + encodeURIComponent(nombre) + "&contrasena=" + encodeURIComponent(contrasena);
+
+  // Enviar la solicitud
+  xhr.send(datos);
+}
+
+
 function contarTiempo() {
   tiempoRegresivo = setInterval(() => {
     mostrarTiempo.innerHTML = `Tiempo restante: ${timer} segundos`;

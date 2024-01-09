@@ -25,7 +25,7 @@ function guardarNombre() {
         document.getElementById("nameInput").value = "";
 
         // Muestra una alerta indicando que los datos fueron almacenados correctamente.
-        alert("¡Datos almacenados correctamente!");
+        //alert("¡Datos almacenados correctamente!");
 
        // Habilita el botón "Ir Ahora" después de guardar los datos
        document.getElementById("irAhoraBtn").disabled = false;

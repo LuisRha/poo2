@@ -12,14 +12,31 @@
         <div class="welcome-content">
             <h1>Juego de Memoria</h1>
             <p class="project-info">Proyecto POO2</p>
+
             
-            <button class="enter-name-btn" onclick="openNameInput()">Ingresa tu nombre</button>
+            
+            <button class="enter-name-btn" onclick="openNameInput()">Registrate</button>
 
             <div class="name-input-box" id="nameInputBox">
                 <input type="text" id="nameInput" placeholder="Ingresa tu nombre">
+                <input type="password" id="passwordInput" placeholder="Ingresa tu contraseña">
+
                 <button id="guardarBtn" onclick="guardarNombre()">Guardar</button>
             </div>
-            <button class="go-to-game-btn guardar-btn" onclick="redirigirAIndex()" id="irAhoraBtn" disabled>Ir ahora</button>
+           
+            
+            <button class="ir-ahora" onclick="redirigirAIndex()" id="irAhoraBtn" disabled>Ir ahora</button>
+
+<script>
+  // Función para redirigir y agregar animación
+  function redirigirAIndex() {
+    // Tu lógica de redirección aquí
+
+    // Agrega la clase "animar" al botón
+    document.getElementById("irAhoraBtn").classList.add("animar");
+  }
+</script>
+            
 
              <!-- Botón de "Registrar" -->
              <!-- <button class="registrar1" onclick="registrarUsuario()">Registrarse</button> -->

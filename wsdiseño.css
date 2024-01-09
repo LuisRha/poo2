@@ -50,15 +50,25 @@ h1 {
 }
 
 .enter-name-btn, .go-to-game-btn {
-    background-color: rgb(248, 5, 5);
-    color: rgb(250, 250, 250);
-    padding: 10px 20px;
-    margin-top: 130px;
-    cursor: pointer;
-    border: none;
-    font-size: 0.8em;
+    background-color: #fa0727;
+    height: auto;
+    width: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 4px;
+    margin-top: 1px;
+    font-size: 18px;
+    color: rgb(242, 235, 235);
+    font-weight:500;
     font-family: 'SuperMario', sans-serif;
 }
+
+
+  /* Cambia el color al pasar el mouse */
+  .enter-name-btn:hover {
+    background-color: #ed1111;
+    color: rgb(243, 238, 238);
+  }
+
 
 @keyframes brillo {
     0% {
@@ -146,3 +156,30 @@ h1 {
 .registrar1:hover {
     transform: scale(1.1); /* Aplica una escala del 110% al pasar el cursor sobre el elemento */
 }
+
+
+.ir-ahora {
+    background-color: #fa0727;
+    height: auto;
+    width: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 4px;
+    margin-top: 1px;
+    font-size: 18px;
+    color: rgb(242, 235, 235);
+    font-weight:500;
+    font-family: 'SuperMario', sans-serif;
+    
+    
+  }
+
+  /* Cambia el color al pasar el mouse */
+  .ir-ahora:hover {
+    background-color: #ed1111;
+    color: rgb(243, 238, 238);
+  }
+
+
+  
+
+  
