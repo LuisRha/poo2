@@ -46,6 +46,21 @@ let imagenes = [
 imagenes = imagenes.sort(() => Math.random() - 0.5);
 console.log(imagenes);
 
+
+// Función para salir  xxxxxx Luis H
+function salir() {
+  // Puedes realizar acciones de salida aquí si es necesario
+  // Por ejemplo, mostrar un mensaje de despedida
+  //alert("¡Hasta luego!");
+
+  // Redirigir al usuario a la página de inicio
+  window.location.href = "/";
+}
+
+// Asignar el evento de clic al botón de salir
+document.getElementById("btnSalir").addEventListener("click", salir);
+//   hasta  aqui 
+
 function contarTiempo() {
   tiempoRegresivo = setInterval(() => {
     mostrarTiempo.innerHTML = `Tiempo restante: ${timer} segundos`;

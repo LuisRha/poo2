@@ -32,6 +32,38 @@ main {
     border-radius: 1px;
     
 }
+
+table {
+    border-collapse: collapse; /* Para que los bordes de las celdas colapsen en uno solo */
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centrar la tabla en el contenedor */
+    border-radius: 15px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Para que los bordes redondeados sean visibles */
+}
+
+
+/* Agrega estilos para los botones dentro de la tabla */
+table button {
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(149, 169, 228, 0.91); 
+    padding: 8px 16px; /* Ajusta el espacio interno */
+    color: rgb(18, 121, 231);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambia el color al pasar el puntero */
+table button:hover {
+    background-color: rgba(37, 14, 240, 0.4);
+}
+
+
+
+
+
+
 h1 {
     text-align: center;
     font-weight: normal; /* Ajusta a 'normal' para quitar la negrita */
@@ -106,3 +138,17 @@ img {
     z-index: 999; /* Asegura que esté sobre otros elementos si es necesario */
 }
 
+#btnSalir {
+    background-color: rgba(22, 234, 29, 0.4);
+    padding: 4px 10px; /* Ajustar el espacio interno */
+    width: 60px;
+    height: auto;
+    border-radius: 10px; /* Hacer los bordes redondeados */
+    color: rgb(248, 241, 241); /* Cambiar el color de la letra a rojo */
+    font-size: 16px; /* Cambiar el tamaño de la letra */
+    cursor: zoom-in; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+#btnSalir:hover {
+    background-color: rgba(236, 0, 4, 0.901); /* Cambiar el color al pasar el puntero */
+}
